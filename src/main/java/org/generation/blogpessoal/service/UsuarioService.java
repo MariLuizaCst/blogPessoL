@@ -3,6 +3,8 @@ package org.generation.blogpessoal.service;
 import java.nio.charset.Charset;
 import java.util.Optional;
 
+import javax.validation.Valid;
+
 import org.apache.commons.codec.binary.Base64;
 import org.generation.blogpessoal.model.UserLogin;
 import org.generation.blogpessoal.model.Usuario;
@@ -48,6 +50,16 @@ public class UsuarioService {
 
 			}
 		}
+		return null;
+	}
+
+	public Optional<Usuario> atualizarUsuario(@Valid Usuario usuario) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Optional<Usuario> autenticarUsuario(Optional<UserLogin> usuarioLogin) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 
